@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-bold tracking-wider mb-6">
-            Japan Saikoo Co., Ltd.
+            日本賽功株式会社
           </span>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight mb-8">
