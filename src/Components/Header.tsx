@@ -24,10 +24,9 @@ const Logo: React.FC<{ className?: string }> = ({ className = "h-8" }) => (
 const Logo2: React.FC = () => {
   return (
     <div>
-      <img src="/logo192.png" alt="log" style={{height:'40px'}} />
+      <img src="images/logo192.png" alt="log" style={{height:'40px'}} />
     </div>
   );
-
 };
 
 
