@@ -7,21 +7,21 @@ export const Services: React.FC = () => {
       title: "金融システム開発",
       description: "銀行業務における基幹システムから周辺システムまで、高い信頼性が求められる開発を行います。",
       icon: <Code className="w-8 h-8 text-white" />,
-      projects: ["為替個別値決めシステム", "資金業務システム", "ISO 20022対応"],
+      projects: ["為替個別値決めシステム", "資金業務システム", "手数料優遇システム開発"],
       color: "bg-blue-600"
     },
     {
       title: "ITコンサルティング",
       description: "お客様のビジネスプロセス（業務）を深く理解し、真の課題解決に向けたシステム要件を定義します。",
       icon: <Briefcase className="w-8 h-8 text-white" />,
-      projects: ["業務要件定義", "システム化計画策定", "PMO支援"],
+      projects: ["PMO支援", "システム更改画策", "常駐支援"],
       color: "bg-orange-500"
     },
     {
       title: "インフラ・保守運用",
       description: "安定したサービス提供のためのサーバー構築、ネットワーク管理、セキュリティ対策を実施します。",
       icon: <Server className="w-8 h-8 text-white" />,
-      projects: ["サーバー構築・移転", "与信管理システム推進", "運用保守"],
+      projects: ["新規構築ソリューション", "移転ソリューション", "運用保守"],
       color: "bg-slate-700"
     }
   ];
