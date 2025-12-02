@@ -6,8 +6,8 @@ export const Strengths: React.FC = () => {
   const strengths = [
     {
       title: "豊富な実務経験",
-      subtitle: "10年以上の現場実績",
-      description: "単なる開発経験だけでなく、10年以上にわたり銀行案件の開発に携わり、現場に常駐。銀行特有のオペレーションや文化を深く理解しています。",
+      subtitle: "15年以上金融機関現場実績",
+      description: "単なる開発経験だけでなく、15年以上にわたり銀行案件の開発に携わり、案件画策、要件定義、設計などの上流工程から下流工程まで一貫とした案件参入。銀行特有のオペレーションや文化を深く理解しています。",
       icon: <Award className="w-8 h-8 text-white" />,
       color: "bg-blue-600"
     },
