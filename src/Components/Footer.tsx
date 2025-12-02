@@ -16,13 +16,22 @@ const Logo: React.FC<{ className?: string }> = ({ className = "h-6" }) => (
   </svg>
 );
 
+const Logo2: React.FC = () => {
+  return (
+    <div>
+      <img src="/logo192.png" alt="log" style={{height:'40px'}} />
+    </div>
+  );
+};
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left flex flex-col items-center md:items-start">
-            <Logo className="h-8 mb-2" />
+            {/* <Logo className="h-8 mb-2" /> */}
+            <Logo2 />
             <p className="text-xs mt-2">日本賽功株式会社 | Japan Saikoo Co., Ltd.</p>
           </div>
           

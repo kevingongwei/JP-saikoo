@@ -10,16 +10,26 @@ const Logo: React.FC<{ className?: string }> = ({ className = "h-8" }) => (
     <path d="M5 10 L12 10" stroke="#F59E0B" strokeWidth="2" />
     <path d="M5 16 L12 14" stroke="#F59E0B" strokeWidth="2" />
     <path d="M8 22 L14 18" stroke="#F59E0B" strokeWidth="2" />
-    
+
     {/* Text Part: Saikoo */}
     <path d="M75 50 L85 20 L105 20 L105 28 L95 28 L90 42 L105 42 L102 50 Z" fill="#0056b3" />
-    <path d="M110 50 L113 40 L125 40 L122 50 Z M116 35 L128 35 L131 25 L119 25 Z" fill="#0056b3" /> 
+    <path d="M110 50 L113 40 L125 40 L122 50 Z M116 35 L128 35 L131 25 L119 25 Z" fill="#0056b3" />
     <path d="M130 50 L138 25 L148 25 L140 50 Z" fill="#0056b3" />
     <path d="M150 50 L153 20 L163 20 L161 35 L170 20 L182 20 L170 36 L180 50 L168 50 L160 38 L158 50 Z" fill="#0056b3" />
     <path d="M185 38 A 10 10 0 1 1 205 38 A 10 10 0 1 1 185 38 M190 38 A 5 5 0 1 0 200 38 A 5 5 0 1 0 190 38" fill="#0056b3" />
     <path d="M210 38 A 10 10 0 1 1 230 38 A 10 10 0 1 1 210 38 M215 38 A 5 5 0 1 0 225 38 A 5 5 0 1 0 215 38" fill="#0056b3" />
   </svg>
 );
+
+const Logo2: React.FC = () => {
+  return (
+    <div>
+      <img src="/logo192.png" alt="log" style={{height:'40px'}} />
+    </div>
+  );
+
+};
+
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,15 +68,15 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-4' : 'bg-white/50 backdrop-blur-sm py-6'
-      }`}
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-4' : 'bg-white/50 backdrop-blur-sm py-6'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo Representation */}
         <a href="#home" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '#home')}>
-           <Logo className="h-10 w-auto" />
+          {/* <Logo className="h-10 w-auto" /> */}
+          <Logo2></Logo2>
         </a>
 
         {/* Desktop Nav */}
@@ -84,7 +94,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-slate-700 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
