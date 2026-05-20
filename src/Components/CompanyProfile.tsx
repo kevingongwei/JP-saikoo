@@ -74,7 +74,7 @@ export const CompanyProfile: React.FC = () => {
                   <dt className="text-slate-500 font-medium">住所</dt>
                   <dd className="md:col-span-2 text-slate-800 font-medium flex items-start gap-2">
                     <MapPin size={16} className="text-slate-400 mt-1 flex-shrink-0" />
-                    東京都港区東麻布22-5 <br />AZABU EAST COURT 106C
+                    〒105-0011 <br />東京都港区芝公園2-6-8 日本女子会館1階
                   </dd>
 
                   <dt className="text-slate-500 font-medium">事業内容</dt>
